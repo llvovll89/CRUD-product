@@ -1,0 +1,87 @@
+table {
+    width: 90%;
+    margin: 40px auto;
+    background: rgba(12, 154, 167, .35);
+}
+
+table.list {
+    text-align: center;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+form > div > input {
+    height: 35px;
+}
+
+td {
+    border:  1px solid rgba(255, 101, 21, .55);
+    text-align: left;
+    padding: 8px 15px;
+}
+
+tr:nth-child(even), table.list thead > tr{
+    background-color: rgb(204, 200, 200);
+}
+
+input[type="submit"],input[type="reset"]{
+    background: #eee;
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover{
+    background: #4b99d8;
+}
+
+input[type="reset"]:hover{
+    background: #4b99d8;
+}
+
+.form-action-btn {
+    margin: .5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button{
+    background: #eee;
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background:#4b99d8 ;
+}

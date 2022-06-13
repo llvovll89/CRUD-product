@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="productCode">상품번호</label>
+                        <input type="text" name="productCode" id="productCode">
+                    </div>
+                    <div>
+                        <label for="product">상품이름</label>
+                        <input type="text" name="product" id="product">
+                    </div>
+                    <div>
+                        <label for="qty">수량</label>
+                        <input type="text" name="qty" id="qty">
+                    </div>
+                    <div>
+                        <label for="perPrice">가격</label>
+                        <input type="text" name="perPrice" id="perPrice">
+                    </div>
+                    <div class="form-action-btn">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            <td>
+                <table class="list" id="storeList">
+                    <thead>
+                        <tr>
+                            <th>상품번호</th>
+                            <th>상품이름</th>
+                            <th>수량</th>
+                            <th>가격</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+            </td>
+        </tr>
+    </table>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
